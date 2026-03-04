@@ -31,8 +31,8 @@ export const metadata: Metadata = {
       "Transforma tu cuerpo con el Método Iron. +200 clientes activos, +10 años de experiencia.",
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
   alternates: {
     canonical: "/",
