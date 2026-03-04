@@ -1,63 +1,36 @@
-# Isaac Martinez — Entrenador Personal 🏋️‍♂️
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Sitio web profesional para **Isaac Martinez**, entrenador personal especializado en el **Método Iron** — un sistema de entrenamiento basado en fases de fuerza, hipertrofia y resistencia.
+## Getting Started
 
-## 🚀 Tecnologías
-
-- **Next.js 16** (App Router, Turbopack)
-- **React 19** con componentes cliente/servidor
-- **CSS Vanilla** — sistema de diseño con variables CSS, gradientes y glassmorphism
-- **TypeScript**
-
-## 📁 Estructura del Proyecto
-
-```
-Isaac-Martinez/
-├── next-app/                 # Aplicación Next.js
-│   ├── public/               # Assets estáticos (imágenes, logos, iconos)
-│   ├── src/
-│   │   ├── app/              # App Router (layout, page, globals.css)
-│   │   └── components/       # Componentes React + CSS
-│   │       ├── Header.tsx    # Header con menú off-canvas mobile
-│   │       ├── Hero.tsx      # Hero con carousel de imágenes
-│   │       ├── About.tsx     # Sobre mí con contadores animados
-│   │       ├── Services.tsx  # Planes con carousel mobile
-│   │       ├── SuccessStories.tsx  # Testimonios con carousel mobile
-│   │       └── Contact.tsx   # Formulario + newsletter + footer
-│   └── next.config.ts
-├── Recursos/                 # Assets fuente (ignorado por git)
-└── .gitignore
-```
-
-## ✨ Características
-
-- **Diseño premium** con paleta violeta eléctrico (#8b5cf6) y verde lima (#a3e635)
-- **Header glass** con efecto blur al scrollear
-- **Carousel de imágenes** en el hero con transiciones suaves
-- **Contadores animados** con IntersectionObserver en "Sobre Mí"
-- **Menú off-canvas** con hamburguesa animada y overlay de blur
-- **Carousels touch** para planes y testimonios en mobile
-- **Newsletter** con campo de suscripción
-- **Fondos full-width** con blobs de gradientes por sección
-- **SEO completo** (OpenGraph, Twitter Cards, keywords, canonical)
-- **Favicon** personalizado desde el isologo
-- **Responsive** optimizado para desktop, tablet y mobile
-
-## 🛠️ Desarrollo
+First, run the development server:
 
 ```bash
-# Instalar dependencias
-cd next-app
-npm install
-
-# Iniciar servidor de desarrollo
 npm run dev
-
-# Build de producción
-npm run build
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 📝 Créditos
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Diseño y desarrollo**: [Dropping](https://dropping.digital)
-- **Entrenador**: Isaac Martinez — [@isaacmartinez.f](https://www.instagram.com/isaacmartinez.f/)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
