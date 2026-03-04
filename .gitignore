@@ -1,0 +1,29 @@
+# Recursos (source assets - already copied to public)
+Recursos/
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# Debug
+npm-debug.log*
+
+# Local env files
+.env*.local
+
+# Vercel
+.vercel
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
