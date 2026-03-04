@@ -1,0 +1,123 @@
+.app-section {
+  position: relative;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.app-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-glow {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  background: var(--accent-primary);
+  filter: blur(100px);
+  opacity: 0.2;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.app-img {
+  position: relative;
+  z-index: 1;
+  max-width: 80%; /* Achicamos un poco la imagen */
+  max-height: 550px;
+  object-fit: contain;
+  /* Animación sutil de levitación */
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.app-desc {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.app-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.app-feature-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.app-feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.app-feature-card .feature-icon {
+  font-size: 2rem;
+}
+
+.app-feature-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem; /* Levemente mas chico para que entre bien */
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.app-feature-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.app-btn {
+  align-self: flex-start;
+  margin-top: 24px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .app-content {
+    order: 2;
+  }
+  
+  .app-image-wrapper {
+    order: 1;
+  }
+
+  .app-features {
+    grid-template-columns: 1fr; /* Vuelve a 1 columna en mobile */
+  }
+}
+

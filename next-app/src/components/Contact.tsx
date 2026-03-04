@@ -58,10 +58,11 @@ export default function Contact() {
               </div>
               <div className="form-group">
                 <select required defaultValue="">
-                  <option value="" disabled>Selecciona tu objetivo</option>
-                  <option value="perder_grasa">Perder Grasa</option>
-                  <option value="ganar_musculo">Ganar Músculo</option>
-                  <option value="recomposicion">Recomposición Corporal</option>
+                  <option value="" disabled>Motivo de consulta</option>
+                  <option value="entrenamiento_personalizado">Entrenamiento Personalizado</option>
+                  <option value="plan_nutricional">Plan Nutricional</option>
+                  <option value="app_entrenamiento">App de Entrenamiento</option>
+                  <option value="otros">Otros</option>
                 </select>
               </div>
               <button type="submit" className="btn-primary form-submit">ENVIAR AHORA</button>

@@ -39,8 +39,9 @@ export default function Header() {
           <nav className="nav-links">
             <Link href="#about">SOBRE MÍ</Link>
             <Link href="#planes">PLANES</Link>
+            <Link href="#nutricion">NUTRICIÓN</Link>
+            <Link href="#app">APP</Link>
             <Link href="#resultados">RESULTADOS</Link>
-            <Link href="#contacto">CONTACTO</Link>
           </nav>
           <div className="nav-actions">
             <a href="#contacto" className="btn-primary">EMPEZAR</a>
@@ -86,13 +87,17 @@ export default function Header() {
             <span className="offcanvas-link-num">02</span>
             <span>PLANES</span>
           </a>
-          <a href="#resultados" onClick={closeMenu} className="offcanvas-link">
+          <a href="#nutricion" onClick={closeMenu} className="offcanvas-link">
             <span className="offcanvas-link-num">03</span>
-            <span>RESULTADOS</span>
+            <span>NUTRICIÓN</span>
           </a>
-          <a href="#contacto" onClick={closeMenu} className="offcanvas-link">
+          <a href="#app" onClick={closeMenu} className="offcanvas-link">
             <span className="offcanvas-link-num">04</span>
-            <span>CONTACTO</span>
+            <span>APP</span>
+          </a>
+          <a href="#resultados" onClick={closeMenu} className="offcanvas-link">
+            <span className="offcanvas-link-num">05</span>
+            <span>RESULTADOS</span>
           </a>
         </div>
 
